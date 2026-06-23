@@ -3,7 +3,11 @@
 Turns CCP's EVE Frontier static data into a SpaceEngine add-on so you can fly the galaxy
 in SE. Two scripts, same output format — pick your source.
 
+```
+python json_to_spaceengine.py solarsystemcontent.json out --names SolarSystems.csv --offset-pc 0 0 50000 --variety --ring-chance 0.45 --life-chance 0.25
+```
 ## ⭐ Route 2 — `json_to_spaceengine.py` (recommended: real orbits)
+
 Reads the big `solarsystemcontent.json` (FSD binary export, ~1.14 GB). It ships **real
 orbital elements** (semi-major axis, eccentricity, orbit-plane normal, period) and physics
 (mass, density, temperature, rotation), so you get true elliptical orbits and real planet
